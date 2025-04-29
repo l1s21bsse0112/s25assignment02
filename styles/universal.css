@@ -16,3 +16,11 @@
     color: tomato;
     text-align: center;
 }
+
+#sign-in-form-container {
+    padding: 50px;
+}
+
+#sign-in-form label {
+    font-weight: bold;
+}
