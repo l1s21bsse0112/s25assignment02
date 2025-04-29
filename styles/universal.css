@@ -1,0 +1,26 @@
+#feedback-heading {
+    text-decoration: underline;
+}
+
+#product-detail-heading {
+    color: cadetblue;
+    background-color: rgb(0, 0, 0, .2);
+}
+
+#heading-container {
+    background-color: rgb(231, 217, 199);
+    padding: 25px;
+}
+
+#homepage-heading {
+    color: tomato;
+    text-align: center;
+}
+
+#sign-in-form-container {
+    padding: 50px;
+}
+
+#sign-in-form label {
+    font-weight: bold;
+}
