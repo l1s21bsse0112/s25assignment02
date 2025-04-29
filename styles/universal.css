@@ -1,3 +1,7 @@
+#feedback-heading {
+    text-decoration: underline;
+}
+
 #product-detail-heading {
     color: cadetblue;
     background-color: rgb(0, 0, 0, .2);
