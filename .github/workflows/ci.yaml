@@ -7,8 +7,7 @@ on:
       - opened
       - synchronize
   push:
-    branches:
-      -develop
+    branches: -develop
 jobs:
   linting-job:
     runs-on: ubuntu-latest
@@ -17,9 +16,13 @@ jobs:
         run: echo "Welcome to CI Pipeline"
       - name: Checkout Repo
         uses: actions/checkout@v4
-      # - name: Repo Information
-      #   run: |
-      #     git branch
-      #     echo "Actor Name: ${{github.actor}}"
-      #     echo "Repo Name: ${{github.repository}}"
-      #     echo "Event Name: ${{github.event}}"
+      - name: Repo Information
+        run: |
+          git branch
+          echo "Actor Name: ${{github.actor}}"
+          echo "Repo Name: ${{github.repository}}"
+          echo "Event Name: ${{github.event}}"
+      - name: Lint HTML Files
+        run: npx htmlhint "**/*.html"
+      - name: Lint CSS Files
+        run: npx stylelint "**/*.css"
